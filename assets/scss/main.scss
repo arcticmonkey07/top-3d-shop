@@ -1,0 +1,36 @@
+// GLOBAL STYLES
+@import "variables";
+@import "normalize";
+@import "font";
+@import "icomoon";
+
+// BLOCKS STYLE
+@import "blocks/header";
+@import "blocks/main-menu";
+@import "blocks/products-menu";
+@import "blocks/about";
+@import "blocks/articles";
+
+body {
+	position: relative;
+	font-family: $font-family;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	min-width: 320px;
+	color: #000;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+	opacity: 0;
+}
