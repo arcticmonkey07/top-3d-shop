@@ -5,39 +5,83 @@
 
 @@include('template/page-header.html')
 
-<section class="about">
-	<img src="./img/image.jpg" class="about__img" alt="top-3d-shop">
-	<div class="about-wrapper">
-		<div class="about-left">
-			<h2 class="about-left__header">Твоя работа в крупнейшем&nbsp;интеграторе цифрового производства</h2>
-			<button class="about-left__button-send">Отправить резюме</button>
-			<span class="about-left__text">Нажимая кнопку, вы соглашаетесь на&nbsp;обработку персональных данных.</span>
+<div class="container">
+	<section class="about">
+		<img src="./img/image.jpg" class="about__img" alt="top-3d-shop">
+		<div class="about-wrapper">
+			<div class="about-left">
+				<h2 class="about-left__header">Твоя работа в крупнейшем&nbsp;интеграторе цифрового производства</h2>
+				<button class="about-left__button-send">Отправить резюме</button>
+				<span class="about-left__text">Нажимая кнопку, вы соглашаетесь на&nbsp;обработку персональных данных.</span>
+			</div>
+			<div class="about-right">
+				<p class="about-right__text">Top 3D Shop – лидер по продажам 3D-оборудования в России и странах СНГ. В 2018 мы стали лучшим интегратором 3D оборудования по аддитивным технологиям и цифровому производству по версии <a href="#" class="about-right__link">3D Print Awards</a>.</p>
+				<p class="about-right__text">За 6 лет работы более 10 000 клиентов по всей России и СНГ выбрали Top 3D Shop. В 2018 наш оборот составил 600 млн. рублей, в компании работает более 100 сотрудников.</p>
+				<p class="about-right__text">Новая цель: 1 млрд торгового оборота в этом году и выход на международные рынки. Если вы — целеустремленный специалист, готовый учиться новым навыкам и учить других, мыслите не просто как исполнитель, а как владелец своего направления, то нам по пути!</p>
+			</div>
 		</div>
-		<div class="about-right">
-			<p class="about-right__text">Top 3D Shop – лидер по продажам 3D-оборудования в России и странах СНГ. В 2018 мы стали лучшим интегратором 3D оборудования по аддитивным технологиям и цифровому производству по версии <a href="#" class="about-right__link">3D Print Awards</a>.</p>
-			<p class="about-right__text">За 6 лет работы более 10 000 клиентов по всей России и СНГ выбрали Top 3D Shop. В 2018 наш оборот составил 600 млн. рублей, в компании работает более 100 сотрудников.</p>
-			<p class="about-right__text">Новая цель: 1 млрд торгового оборота в этом году и выход на международные рынки. Если вы — целеустремленный специалист, готовый учиться новым навыкам и учить других, мыслите не просто как исполнитель, а как владелец своего направления, то нам по пути!</p>
+	</section>
+	
+	<section class="articles">
+		<h2 class="articles__header">Лучше один раз увидеть:</h2>
+		<ul class="articles__list">
+			<li class="articles__item">
+				<a href="#" class="articles__link">
+					<span class="articles__text">Как устроена наша компания изнутри</span>
+					<i class="icon-arrow icon"></i>
+				</a>
+			</li>
+			<li class="articles__item">
+				<a href="#" class="articles__link">
+					<span class="articles__text">Как создавалась компания - необычная история</span>
+					<i class="icon-arrow icon"></i>
+				</a>
+			</li>
+			<li class="articles__item">
+				<a href="#" class="articles__link">
+					<span class="articles__text">Читай о нас на 3D Today</span>
+					<i class="icon-arrow icon"></i>
+				</a>
+			</li>
+		</ul>
+	</section>
+</div>
+
+<section class="video">
+	<div class="video-container">
+		<div class="video-header-wrapper">
+			<h2 class="video__header">Видео о нас</h2>
+			<div class="video-slider__arrows">
+				<div class="video-slider__arrow video-slider__arrow--left">
+					<i class="icon-arrow"></i>
+				</div>
+				<div class="video-slider__arrow video-slider__arrow--right">
+					<i class="icon-arrow"></i>
+				</div>
+			</div>
+		</div>
+		<div class="video-slider-wrapper">
+			<div class="video-slider">
+				<div class="video-slider__item">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/OYFOWAL1NlA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="video-slider__item">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/PCVlgLS9cfE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="video-slider__item">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/qFzuPICPvqA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="video-slider__item">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/Bg1zbYZWfkg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
 
-<section class="articles">
-	<h2 class="articles__header">Лучше один раз увидеть:</h2>
-	<div class="articles-links">
-		<a href="#" class="articles__link">
-			Как устроена наша компания изнутри
-			<i class="icon-arrow"></i>
-		</a>
-		<a href="#" class="articles__link">
-			Как создавалась компания - необычная история
-			<i class="icon-arrow"></i>
-		</a>
-		<a href="#" class="articles__link">
-			Читай о нас на 3D Today
-			<i class="icon-arrow"></i>
-		</a>
-	</div>
-</section>
 
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/plugins.min.js"></script>
+	<script src="js/main.min.js"></script>
 </body>
 </html>
