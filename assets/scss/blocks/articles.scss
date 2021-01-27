@@ -1,6 +1,14 @@
 .articles {
   margin-bottom: 70px;
 
+  @media (max-width: 1200px) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 700px) {
+    margin-bottom: 30px;
+  }
+
   &__header {
     position: relative;
     margin-bottom: 50px;
@@ -11,6 +19,12 @@
     color: #222222;
     background-color: #fff;
 
+    @media (max-width: 1200px) {
+      margin-bottom: 30px;
+      font-size: 22px;
+      line-height: 27px;
+    }
+
     &:after {
       content: '';
       position: absolute;
@@ -19,20 +33,41 @@
       width: 76.5%;
       height: 1px;
       background-color: rgba(0, 0, 0, 0.1);
+
+      @media (max-width: 1450px) {
+        width: 75%;
+      }
+
+      @media (max-width: 1200px) {
+        width: 68%;
+      }
+
+      @media (max-width: 900px) {
+        width: 60%;
+      }
     }
   }
 
   &__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (max-width: 1200px) {
+    }
   }
 
   &__item {
     width: 370px;
-    
+
+    @media (max-width: 1200px) {
+      width: initial;
+      margin-bottom: 20px;
+    }
+
     &:last-child {
       display: flex;
       justify-content: center;
@@ -47,11 +82,11 @@
     line-height: 19px;
     text-decoration: none;
     color: #4d4d4d;
-    transition: .2s ease;
+    transition: 0.2s ease;
 
     & .icon {
       transform: rotate(-90deg);
-      transition: .2s ease;
+      transition: 0.2s ease;
 
       &:before {
         font-size: 10px;
@@ -87,5 +122,9 @@
   &__text {
     margin-right: 12px;
     border-bottom: 1px solid #4d4d4d;
+
+    @media (max-width: 900px) {
+      border-bottom: none;
+    }
   }
 }

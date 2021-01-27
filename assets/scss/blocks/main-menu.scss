@@ -1,6 +1,10 @@
 .main-menu {
   padding: 13px 0 22px 0;
 
+  @media (max-width: 900px) {
+    padding: 10px 0;
+  }
+
   &__list {
     display: flex;
     justify-content: space-between;
