@@ -3,8 +3,20 @@
   padding: 21px 0 22px 0;
   border-top: 1px solid rgba(189, 189, 189, 0.35);
 
+  @media (max-width: 1450px) {
+    padding: 20px 15px;
+  }
+
   @media (max-width: 900px) {
-    padding: 10px 0;
+    padding: 10px 15px;
+  }
+
+  @media (max-width: 700px) {
+    padding: 10px 10px;
+  }
+
+  @media (max-width: 400px) {
+    padding: 10px 10px;
   }
 
   &-wrapper {
@@ -13,26 +25,24 @@
     padding: 0 18px;
 
     @media (max-width: 1450px) {
-      max-width: 1160px;
-      padding: 0 15px;
+      max-width: 1130px;
+      padding: 0;
     }
   
     @media (max-width: 1200px) {
-      max-width: 870px;
+      max-width: 830px;
     }
   
     @media (max-width: 900px) {
-      max-width: 670px;
+      max-width: 630px;
     }
   
     @media (max-width: 700px) {
       max-width: 360px;
-      padding: 0 10px;
     }
   
     @media (max-width: 400px) {
       max-width: 300px;
-      padding: 0 10px;
     }
   }
 
